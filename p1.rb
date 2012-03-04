@@ -1,9 +1,5 @@
 def palindrome?(string)
-  if (string.downcase.gsub(/\W/,'') == string.downcase.reverse.gsub(/\W/,''))
-    return true
-  else
-    return false
-  end
+  string.downcase.gsub(/\W/,'') == string.downcase.reverse.gsub(/\W/,'')
 end
 def count_words(string)
   h = Hash.new()
